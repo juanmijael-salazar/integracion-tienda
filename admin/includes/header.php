@@ -2,6 +2,14 @@
 if (empty($_SESSION['id'])) {
     header('Location: ./');
 } ?>
+
+<?php
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -123,7 +131,7 @@ if (empty($_SESSION['id'])) {
                         <li class="nav-item dropdown no-arrow">
                             
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $_SESSION['nombre']; ?></span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 font-weight-bold h5"><?php echo $_SESSION['nombre']; ?></span>
                                 <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
                                 
                             </a>
@@ -157,7 +165,7 @@ if (empty($_SESSION['id'])) {
 
 
                                         <div class="container" id="felo">
-                                            <form class="" action="updateperfil.php" method="POST">
+                                            <form>
                                                 <h2>Actualiza tu perfil</h2>
                                                 <div class="form-group">
                                                     <label for="user">Usuario:</label>
@@ -165,8 +173,13 @@ if (empty($_SESSION['id'])) {
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="pwd">Nombre:</label>
-                                                    <input type="text" class="form-control" name="nombre" value="<?php echo $_SESSION['nombre']?>">
+                                                    <input type="text" class="form-control" id ="nombre1" name="nombre1" value="<?php echo $_SESSION['nombre']?>">
                                                 </div>
+
+
+
+
+
                                                 <div class="form-group">
                                                     <button class="btn btn-success" class="form-control" type="submit">Actualizar</button>
                                                     <a href="inicio.php" class="btn btn-danger">Cancelar</a>
@@ -174,13 +187,6 @@ if (empty($_SESSION['id'])) {
 
                                             </form>
                                         </div>
-
-
-
-
-
-
-
 
 
 

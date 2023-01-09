@@ -49,7 +49,7 @@
                             <?php } ?>
                         </ul>
 
-                        <a class="navbar-brand" href="http://localhost/card/admin" style="margin-left:35%;" ><i class="fas fa-backward"></i> Administrador -></a>
+                        <a class="navbar-brand" href="admin" style="margin-left:35%;" ><i class="fas fa-backward"></i> Administrador -></a>
                     </div>
                  </div>             
             </div>
