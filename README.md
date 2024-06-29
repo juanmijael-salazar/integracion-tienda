@@ -1,4 +1,4 @@
-# Integración de tienda online simple
+# Integración de tienda online básica
 # Tools and Languages
 * Ajax
 * Sql
